@@ -6,7 +6,6 @@ function TodoList({ todos, setTodos, filteredTodos,  onEditClick }) {
   return (
     <div className="todo-container">
         <ul className="todo-list">
-            {/* {todos.map((todo) => ( */}
             {filteredTodos.map((todo) => (
                 <Todo 
                     key={todo.id} 
@@ -18,8 +17,6 @@ function TodoList({ todos, setTodos, filteredTodos,  onEditClick }) {
                 />
             ))}
         </ul>
-        
-        {/* <TodoForm onSubmit={addTodo}/> */}
     </div>
   )
 }
